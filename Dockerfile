@@ -1,1 +1,1 @@
-FROM cloudforet/python-core:0.0.0
+FROM cloudforet/python-core:1.12.dev2
