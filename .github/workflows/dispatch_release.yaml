@@ -29,6 +29,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: ${{ env.BRANCH }}
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Update base image version in Dockerfile
         run: |
@@ -58,6 +59,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: ${{ env.BRANCH }}
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: tagging
         run: |
