@@ -50,6 +50,7 @@ jobs:
       - name: Checkout
         run: echo "docker"
 
+  tagging:
     needs: docker
     runs-on: ubuntu-latest
     steps:
