@@ -33,7 +33,7 @@ jobs:
 
       - name: Update base image version in Dockerfile
         run: |
-          sed -i 's/FROM cloudforet/python-core:.+$/FROM cloudforet/python-core:${{ env.VERSION }}/' Dockerfile
+          sed -i 's/FROM cloudforet\/python-core:.*/FROM cloudforet\/python-core:${{ env.VERSION }}/' Dockerfile
 
       - name: Push artifacts to origin master
         uses: stefanzweifel/git-auto-commit-action@v4
