@@ -1,4 +1,3 @@
-
 FROM local/python-core:1
 
 ENV PYTHONUNBUFFERED 1
